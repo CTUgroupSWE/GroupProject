@@ -6,6 +6,7 @@
 <script> 
 // url to go to main menu
 var mainMenuUrl = "mainmenu.html";
+var logOutUrl = "login.html";
 
 function returnToMainMenu()  
 {
@@ -16,7 +17,9 @@ if (done==0) { window.location.href = mainMenuUrl; }
 function logOut()  
 {
 var done=0;
-if (done==0) { alert("Thank you for using Group Bank Mobile Apps - Logging Out!"); }
+if (done==0) { 
+	alert("Thank you for using Group Bank Mobile Apps - Logging Out!")
+	window.location.href = logOutUrl; }
 }
 
 </script>
@@ -32,7 +35,14 @@ Main Menu</h1>
 <input type="button" value="      Return Home     " onclick="returnToMainMenu()"/><br>
 <input type="button" value="          Log Out         " onclick="logOut()"/><br>
 </form> 
+
+<br>
+CURRENT FUNDS<br>
+Checking: $5000.00<br>
+Savings: $1000.00<br>
 </div>
+
+
 
 </body>
 </html> 
