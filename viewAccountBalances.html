@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="global.css" media="all">
+
+<script> 
+// url to go to main menu
+var mainMenuUrl = "mainmenu.html";
+
+function returnToMainMenu()  
+{
+var done=0;
+if (done==0) { window.location.href = mainMenuUrl; }
+}
+
+function logOut()  
+{
+var done=0;
+if (done==0) { alert("Thank you for using Group Bank Mobile Apps - Logging Out!"); }
+}
+
+</script>
+
+</head>
+<body>
+
+<h1>Group Bank <br> 
+Main Menu</h1>
+
+<div class="mainMenuInfo">
+<form name=mainMenu>
+<input type="button" value="      Return Home     " onclick="returnToMainMenu()"/><br>
+<input type="button" value="          Log Out         " onclick="logOut()"/><br>
+</form> 
+</div>
+
+</body>
+</html> 

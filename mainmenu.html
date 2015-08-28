@@ -4,10 +4,14 @@
 <link rel="stylesheet" type="text/css" href="global.css" media="all">
 
 <script> 
+
+var viewAccountBalancesUrl = "viewAccountBalances.html";
+var logOutUrl = "login.html";
+
 function viewAccountBalances()  
 {
 var done=0;
-if (done==0) { alert("View Account Balances function not available yet!"); }
+if (done==0)  { window.location.href = viewAccountBalancesUrl; }
 }
 
 function viewAccountHistory()  
@@ -37,7 +41,10 @@ if (done==0) { alert("Pay Bills function not available yet!"); }
 function logOut()  
 {
 var done=0;
-if (done==0) { alert("Thank you for using Group Bank Mobile Apps - Logging Out!"); }
+if (done==0) { 
+	alert("Thank you for using Group Bank Mobile Apps - Logging Out!");
+	window.location.href = logOutUrl;
+	}
 }
 
 </script>
@@ -51,11 +58,11 @@ Main Menu</h1>
 <div class="mainMenuInfo">
 <form name=mainMenu>
 <input type="button" value=" View Account Balances " onclick="viewAccountBalances()"/><br>
-<input type="button" value="    View Account History  " onclick="viewAccountHistory()"/><br>
-<input type="button" value="       Transfer Funds     " onclick="transferFunds()"/><br>
-<input type="button" value="       Deposit Checks     " onclick="depositCheck()"/><br>
-<input type="button" value="         Pay Bills        " onclick="payBills()"/><br>
-<input type="button" value="          Log Out         " onclick="logOut()"/><br>
+<input type="button" value="    View Account History " onclick="viewAccountHistory()"/><br>
+<input type="button" value="        Transfer Funds     " onclick="transferFunds()"/><br>
+<input type="button" value="       Deposit Checks      " onclick="depositCheck()"/><br>
+<input type="button" value="           Pay Bills            " onclick="payBills()"/><br>
+<input type="button" value="           Log Out             " onclick="logOut()"/><br>
 </form> 
 </div>
 
