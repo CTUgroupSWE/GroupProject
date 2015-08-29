@@ -22,13 +22,44 @@ if (done==0) {
 	window.location.href = logOutUrl; }
 }
 
+function frontPic()
+{
+	var done=0;
+	if (done==0)
+	{
+		alert("Unable to process request. Please try again later.")		
+	}
+}
+
+function backPic()
+{
+	var done=0;
+	if (done==0)
+	{
+		alert("Unable to process request. Please try again later.")		
+	}
+}
+
+
+function depositCheck()
+{
+	var done = 0;
+	
+	if (done==0)
+	{
+		alert("Unable to process request. Please try again later.")	
+	}
+}
+
+
 </script>
 
 </head>
 <body>
 
 <h1>Group Bank <br> 
-Account Balance</h1>
+Deposit Check
+</h1>
 
 
 <div class="mainMenuInfo">
@@ -38,9 +69,16 @@ Account Balance</h1>
 </form> 
 
 <br>
-CURRENT FUNDS<br>
-Checking: $5000.00<br>
-Savings: $1000.00<br>
+<form name=depositCheckForm>
+<input type="button" value="      Front Picture     "  onClick=
+"frontPic()"/><br>
+<input type="button" value="       Back Picture      " onClick=
+"backPic()" /><br>
+Check Value: <input type="text"  /><br>
+<input type="button" value="           Submit          " onClick=
+"depositCheck()"/> <br>
+</form> 
+
 </div>
 
 

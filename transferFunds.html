@@ -22,13 +22,24 @@ if (done==0) {
 	window.location.href = logOutUrl; }
 }
 
+function transferFunds()
+{
+	var done = 0;
+	
+	if (done==0)
+	{
+		alert("Unable to process request. Please try again later.")	
+	}
+}
+
+
 </script>
 
 </head>
 <body>
 
-<h1>Group Bank <br> 
-Account Balance</h1>
+<h1>Group Bank <br>
+Transfer Funds</h1>
 
 
 <div class="mainMenuInfo">
@@ -38,9 +49,25 @@ Account Balance</h1>
 </form> 
 
 <br>
-CURRENT FUNDS<br>
-Checking: $5000.00<br>
-Savings: $1000.00<br>
+Select an from account:
+<form name=transferFundsForm>
+<select name = "transferFromSelect" >
+<option value = "checking">Checking</option>
+<option value = "savings">Saving</option>
+</select><br>
+Select a to account:<br>
+<select name = "transferToSelect" >
+<option value = "checking">Checking</option>
+<option value = "savings">Saving</option>
+</select><br>
+Amount to transfer:<br>
+<input type="text" /><br>
+<input type="button" value="     Submit    " onClick=
+"transferFunds()"/>
+
+<br>
+</form> 
+
 </div>
 
 

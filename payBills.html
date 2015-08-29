@@ -22,13 +22,32 @@ if (done==0) {
 	window.location.href = logOutUrl; }
 }
 
+
+function createBillPay()
+{
+	var done=0;
+	if (done==0)
+	{
+		alert("Create Bill feature is currently under construction");
+	}
+}
+
+function editBillPay()
+{
+	var done=0;
+	if (done==0)
+	{
+		alert("Edit Bill feature is currently under construction");
+	}
+}
+
 </script>
 
 </head>
 <body>
 
-<h1>Group Bank <br> 
-Account Balance</h1>
+<h1>Group Bank <br>
+Bill Pay</h1>
 
 
 <div class="mainMenuInfo">
@@ -38,9 +57,13 @@ Account Balance</h1>
 </form> 
 
 <br>
-CURRENT FUNDS<br>
-Checking: $5000.00<br>
-Savings: $1000.00<br>
+<br>
+<form name= payBillForm>
+<input type="button" value="      Create Bill Pay     " onclick=
+"createBillPay()"/><br>
+<input type="button" value="        Edit Bill Pay        " onClick=
+"editBillPay()" /><br>
+</form> 
 </div>
 
 

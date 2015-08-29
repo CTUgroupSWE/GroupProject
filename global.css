@@ -1,6 +1,8 @@
 /*All pages (Just simple stuff for now)*/
 h1 { text-align: center; font-weight: bold; color: white; }
 
+h2 { text-align: center; font-weight: bold; color: white; }
+
 body { color: white; background-color: green; }
 
 /*Top of all pages (not used yet)*/

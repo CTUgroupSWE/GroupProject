@@ -4,9 +4,19 @@
 <link rel="stylesheet" type="text/css" href="global.css" media="all">
 
 <script> 
-
+// url for account balances page
 var viewAccountBalancesUrl = "viewAccountBalances.html";
+// url for login page
 var logOutUrl = "login.html";
+//url for account history page
+var viewAccountHistoryUrl = "viewAccountHistory.html";
+// url for bill pay page
+var payBillsUrl = "payBills.html";
+// url for transfer funds page
+var transferFundsUrl = "transferFunds.html";
+// url for deposit check page
+var depositCheckUrl = "depositCheck.html";
+
 
 function viewAccountBalances()  
 {
@@ -17,25 +27,25 @@ if (done==0)  { window.location.href = viewAccountBalancesUrl; }
 function viewAccountHistory()  
 {
 var done=0;
-if (done==0) { alert("View Account History function not available yet!"); }
+if (done==0) { window.location.href = viewAccountHistoryUrl; }
 }
 
 function transferFunds()  
 {
 var done=0;
-if (done==0) { alert("Transfer Funds function not available yet!"); }
+if (done==0) { window.location.href = transferFundsUrl; }
 }
 
 function depositCheck()  
 {
 var done=0;
-if (done==0) { alert("Deposit Check function not available yet!"); }
+if (done==0) { window.location.href = depositCheckUrl; }
 }
 
 function payBills()  
 {
 var done=0;
-if (done==0) { alert("Pay Bills function not available yet!"); }
+if (done==0) { window.location.href = payBillsUrl; }
 }
 
 function logOut()  
