@@ -2,34 +2,22 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="global.css" media="all">
-
-<script> 
-function Login()  
-{
-var done=0;
-var username=document.login.userName.value;
-var password=document.login.passWord.value;
-if (username=="member1" && password=="password1") { window.location="mainmenu.html"; done=1; }
-if (username=="member2" && password=="password2") { alert("Valid login!"); done=1; }
-if (done==0) { alert("Invalid login!"); }
-}
-</script>  
-
+<script type="text/javascript" src="groupBankJS.js"></script>
 </head>
 <body>
 
 <h1>Group Bank <br> 
 Login Page</h1>
 
-<div class="logInInfo">
-<form name=login>
-User Name: <br>
-<input type="text" name="userName" size="16" maxlength="16" /> <br>
-Password: <br>
-<input type="password" name="passWord" size="16" maxlength="16"/> <br>
-<label><input type="checkbox" name="saveUserName" value="yes" checked="checked" /> Save User Name </label> <br>
-<input type="button" value="Submit" onclick="Login()"/>
-</form> 
+<div class="logInInfo">  
+  <form name=login>
+    <label for="userName">User Name:</label><br>
+    <input type="text" name="userName" size="16" maxlength="16"/><br>
+    <label for="passWord">Password:</label><br>
+    <input type="password" name="passWord" size="16" maxlength="16"/><br><br>
+    <input type="button" value="Submit" onclick="custLogin()"/>
+    <input type="button" value="Reset" onclick="clearHist()"/>   
+  </form> 
 </div>
 
 </body>

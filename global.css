@@ -1,8 +1,6 @@
 /*All pages (Just simple stuff for now)*/
 h1 { text-align: center; font-weight: bold; color: white; }
-
 h2 { text-align: center; font-weight: bold; color: white; }
-
 body { color: white; background-color: green; }
 
 /*Top of all pages (not used yet)*/
@@ -12,4 +10,12 @@ body { color: white; background-color: green; }
 .logInInfo { text-align: center; }
 
 /*Main Menu page*/
-.mainMenuInfo {text-align: center;}
+.mainMenuInfo { text-align: center; }
+
+/*View Account Balances page*/
+.viewAccBal { text-align: center; }
+table#displayBalancesTable { border: 1px solid black; width: 100%; text-align: center; }
+th,td { border: 1px solid black; padding: 2px; }
+
+/*Input Button*/
+input.button { width: 100%; height: 10%; }
