@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="global.css" media="all">
-	<script type="text/javascript" src="groupBankJS.js"></script>
+  <link rel="stylesheet" type="text/css" href="global.css" media="all">
+  <script type="text/javascript" src="groupBankJS.js"></script>
 </head>
+
 <body>
-
-<h1>Group Bank <br>
-Bill Pay</h1>
-
+<h1>Group Bank</h1>
+<h2>Bill Pay</h2>
 
 <div class="mainMenuInfo">
-<form name=mainMenu>
-<input type="button" value="      Return Home     " onclick="returnToMainMenu()"/><br>
-<input type="button" value="          Log Out         " onclick="logOut()"/><br>
-</form> 
+  <form name= payBillForm>
+    <input type="button" value="Create Bill Pay" class="smallButton" onclick="createBillPay()"/><br>
+    <input type="button" value="Edit Bill Pay" class="smallButton" onClick="editBillPay()" /><br>
+    </form> 
 
-<br>
-<br>
-<form name= payBillForm>
-<input type="button" value="      Create Bill Pay     " onclick=
-"createBillPay()"/><br>
-<input type="button" value="        Edit Bill Pay        " onClick=
-"editBillPay()" /><br>
-</form> 
+  <form name=mainMenu>
+    <input type="button" value="Return Home" class="button" onclick="returnToMainMenu()"/><br>
+    <input type="button" value="Log Out" class="button" onclick="logOut()"/><br>
+  </form>
 </div>
-
-
-
 </body>
 </html> 

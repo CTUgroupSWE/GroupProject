@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="global.css" media="all">
-	<script type="text/javascript" src="groupBankJS.js"></script>
+  <link rel="stylesheet" type="text/css" href="global.css" media="all">
+  <script type="text/javascript" src="groupBankJS.js"></script>
 </head>
+
 <body>
-
-<h1>Group Bank <br> 
-Deposit Check
-</h1>
-
+<h1>Group Bank</h1> 
+<h2>Deposit Check</h2>
 
 <div class="mainMenuInfo">
-<form name=mainMenu>
-<input type="button" value="      Return Home     " onclick="returnToMainMenu()"/><br>
-<input type="button" value="          Log Out         " onclick="logOut()"/><br>
-</form> 
+  <form name=depositCheckForm>
+    <input type="button" value="Front Picture" class="smallButton" onClick="frontPic()"/><br>
+    <input type="button" value="Back Picture" class="smallButton" onClick="backPic()" /><br>
+    Check Value: <br><input type="text"  /><br>
+    <input type="button" value="Submit" onClick="depositCheck()"/> <br>
+  </form> 
 
-<br>
-<form name=depositCheckForm>
-<input type="button" value="      Front Picture     "  onClick=
-"frontPic()"/><br>
-<input type="button" value="       Back Picture      " onClick=
-"backPic()" /><br>
-Check Value: <input type="text"  /><br>
-<input type="button" value="           Submit          " onClick=
-"depositCheck()"/> <br>
-</form> 
-
+  <form name=mainMenu>
+    <input type="button" value="Return Home" class="button" onclick="returnToMainMenu()"/><br>
+    <input type="button" value="Log Out" class="button" onclick="logOut()"/><br>
+  </form> 
 </div>
-
-
-
 </body>
 </html> 

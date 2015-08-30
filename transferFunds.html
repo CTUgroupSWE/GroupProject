@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="global.css" media="all">
-	<script type="text/javascript" src="groupBankJS.js"></script>
+  <link rel="stylesheet" type="text/css" href="global.css" media="all">
+  <script type="text/javascript" src="groupBankJS.js"></script>
 </head>
+
 <body>
-
-<h1>Group Bank <br>
-Transfer Funds</h1>
-
+<h1>Group Bank</h1>
+<h2>Transfer Funds</h2>
 
 <div class="mainMenuInfo">
-<form name=mainMenu>
-<input type="button" value="      Return Home     " onclick="returnToMainMenu()"/><br>
-<input type="button" value="          Log Out         " onclick="logOut()"/><br>
-</form> 
+  Select an from account:
+    <form name=transferFundsForm>
+      <select name = "transferFromSelect" >
+      <option value = "checking">Checking</option>
+      <option value = "savings">Saving</option>
+    </select><br>
+  Select a to account:<br>
+    <select name = "transferToSelect" >
+      <option value = "checking">Checking</option>
+      <option value = "savings">Saving</option>
+    </select><br>
+  Amount to transfer:<br>
+    <input type="text" /><br>
+    <input type="button" value="Submit" onClick="transferFunds()"/>
+    <br>
+  </form> 
 
-<br>
-Select an from account:
-<form name=transferFundsForm>
-<select name = "transferFromSelect" >
-<option value = "checking">Checking</option>
-<option value = "savings">Saving</option>
-</select><br>
-Select a to account:<br>
-<select name = "transferToSelect" >
-<option value = "checking">Checking</option>
-<option value = "savings">Saving</option>
-</select><br>
-Amount to transfer:<br>
-<input type="text" /><br>
-<input type="button" value="     Submit    " onClick=
-"transferFunds()"/>
-
-<br>
-</form> 
-
+  <form name=mainMenu>
+    <input type="button" value="Return Home" class="button" onclick="returnToMainMenu()"/><br>
+    <input type="button" value="Log Out" class="button" onclick="logOut()"/><br>
+  </form> 
 </div>
-
-
-
 </body>
 </html> 

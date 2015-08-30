@@ -1,79 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="global.css" media="all">
-
-<script> 
-// url for account balances page
-var viewAccountBalancesUrl = "viewAccountBalances.html";
-// url for login page
-var logOutUrl = "login.html";
-//url for account history page
-var viewAccountHistoryUrl = "viewAccountHistory.html";
-// url for bill pay page
-var payBillsUrl = "payBills.html";
-// url for transfer funds page
-var transferFundsUrl = "transferFunds.html";
-// url for deposit check page
-var depositCheckUrl = "depositCheck.html";
-
-
-function viewAccountBalances()  
-{
-var done=0;
-if (done==0)  { window.location.href = viewAccountBalancesUrl; }
-}
-
-function viewAccountHistory()  
-{
-var done=0;
-if (done==0) { window.location.href = viewAccountHistoryUrl; }
-}
-
-function transferFunds()  
-{
-var done=0;
-if (done==0) { window.location.href = transferFundsUrl; }
-}
-
-function depositCheck()  
-{
-var done=0;
-if (done==0) { window.location.href = depositCheckUrl; }
-}
-
-function payBills()  
-{
-var done=0;
-if (done==0) { window.location.href = payBillsUrl; }
-}
-
-function logOut()  
-{
-var done=0;
-if (done==0) { 
-	alert("Thank you for using Group Bank Mobile Apps - Logging Out!");
-	window.location.href = logOutUrl;
-	}
-}
-
-</script>
-
+  <link rel="stylesheet" type="text/css" href="global.css" media="all">
+  <script type="text/javascript" src="groupBankJS.js"></script>
 </head>
+
 <body>
 
-<h1>Group Bank <br> 
-Main Menu</h1>
+<h1>Group Bank</h1> 
+<h2>Main Menu</h2>
 
 <div class="mainMenuInfo">
-<form name=mainMenu>
-<input type="button" value=" View Account Balances " onclick="viewAccountBalances()"/><br>
-<input type="button" value="    View Account History " onclick="viewAccountHistory()"/><br>
-<input type="button" value="        Transfer Funds     " onclick="transferFunds()"/><br>
-<input type="button" value="       Deposit Checks      " onclick="depositCheck()"/><br>
-<input type="button" value="           Pay Bills            " onclick="payBills()"/><br>
-<input type="button" value="           Log Out             " onclick="logOut()"/><br>
-</form> 
+  <form name=mainMenu>
+    <input type="button" value="View Account Balances" class="button" onclick="viewAccountBalances()"/><br>
+    <input type="button" value="View Account History" class="button" onclick="viewAccountHistory()"/><br>
+    <input type="button" value="Transfer Funds" class="button" onclick="transferFunds()"/><br>
+    <input type="button" value="Deposit Checks" class="button" onclick="depositCheck()"/><br>
+    <input type="button" value="Pay Bills" class="button" onclick="payBills()"/><br>
+    <input type="button" value="Log Out" class="button" onclick="logOut()"/><br>
+  </form> 
 </div>
 
 </body>

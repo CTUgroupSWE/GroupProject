@@ -2,7 +2,7 @@ function custLogin()
   {
     var done=0;
       if (document.login.userName.value=="member1" && document.login.passWord.value=="password1") 
-        { window.location="mainmenu.html"; done=1; }
+        { window.location.href="mainmenu.html"; done=1; }
       if (done==0)
         { alert("Invalid login!"); clearHist();}
   }
@@ -15,33 +15,27 @@ function clearHist()
 
 function viewAccountBalances()  
   {
-    var done=0;
-    var viewAccountBalancesUrl = "viewAccountBalances.html";
-    if (done==0)  { window.location.href = viewAccountBalancesUrl; }
+    window.location.href="viewAccountBalances.html";
   }
 
 function viewAccountHistory()  
   {
-    var done=0;
-    if (done==0) { alert("View Account History function not available yet!"); }
+    window.location.href="viewAccountHistory.html";
   }
 
 function transferFunds()  
   {
-    var done=0;
-    if (done==0) { alert("Transfer Funds function not available yet!"); }
+    window.location.href="transferFunds.html";
   }
 
 function depositCheck()  
   {
-    var done=0;
-    if (done==0) { alert("Deposit Check function not available yet!"); }
+    window.location.href="depositCheck.html";
   }
 
 function payBills()  
   {
-    var done=0;
-    if (done==0) { alert("Pay Bills function not available yet!"); }
+    window.location.href="payBills.html";
   }
 
 function logOut()  
@@ -54,22 +48,13 @@ function returnToMainMenu()
   {
     window.location.href="mainmenu.html";
   }
-  
-  function createBillPay()
-{
-	var done=0;
-	if (done==0)
-	{
-		alert("Create Bill feature is currently under construction");
-	}
-}
 
-function editBillPay()
-{
-	var done=0;
-	if (done==0)
-	{
-		alert("Edit Bill feature is currently under construction");
-	}
-}
+function createBillPay()  
+  {
+     alert("Create Bill feature is currently under construction");
+  }
 
+function editBillPay()  
+  {
+     alert("Edit Bill feature is currently under construction");
+  }

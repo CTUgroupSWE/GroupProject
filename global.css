@@ -1,6 +1,7 @@
 /*All pages (Just simple stuff for now)*/
 h1 { text-align: center; font-weight: bold; color: white; }
 h2 { text-align: center; font-weight: bold; color: white; }
+h3 { text-align: center; font-weight: bold; color: white; }
 body { color: white; background-color: green; }
 
 /*Top of all pages (not used yet)*/
@@ -14,8 +15,13 @@ body { color: white; background-color: green; }
 
 /*View Account Balances page*/
 .viewAccBal { text-align: center; }
-table#displayBalancesTable { border: 1px solid black; width: 100%; text-align: center; }
-th,td { border: 1px solid black; padding: 2px; }
+table#displayBalancesTable { border: 2px solid black; width: 20%; text-align: center; color: black; margin-left: 40%;
+  margin-right: 40%; }
+th,td { border: 1px solid black; padding: 2px; background-color: grey; }
+td { font-weight: bold; }
 
 /*Input Button*/
-input.button { width: 100%; height: 10%; }
+input.button { width: 20%; height: 10%; border: 1px solid black; }
+
+/*Input Small Button*/
+input.smallButton { width: 10%; height: 10%; border: 1px solid black; }
