@@ -2,9 +2,13 @@ function custLogin()
   {
     var done=0;
       if (document.login.userName.value=="member1" && document.login.passWord.value=="password1") 
-        { window.location.href="mainmenu.html"; done=1; }
+        { 
+			window.location.href="mainmenu.html"; done=1; 
+		}
       if (done==0)
-        { alert("Invalid login!"); clearHist();}
+        { 
+			alert("Invalid login!"); clearHist();
+		}
   }
 
 function clearHist()
@@ -41,7 +45,7 @@ function payBills()
 function logOut()  
   {
     alert("Thank you for using Group Bank Mobile Apps - Logging Out!");
-    window.location.href="login.html";
+    window.location.href="login.php";
   }
 
 function returnToMainMenu()  
