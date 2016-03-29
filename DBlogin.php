@@ -4,6 +4,8 @@ DBlogin.php - this file should be utilized
 in any page that needs to connect to the DB
 */
 
+//This is an added commit
+
 // the site the DB is hosted at
 $db_hostname = 'mysql16.000webhost.com';
 // name of the DB
